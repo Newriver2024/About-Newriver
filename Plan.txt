@@ -1,0 +1,17 @@
+This is an overall plan for AI datacenter, ie, architect a system where data is stored in a cloud data lake and a data scientist/engineer wants to use Newriver private cloud / GPUs computing capabilities to train and inference a model:
+
+1. Data Storage: Store your data in a cloud data lake, such as Azure Data Lake Storage, AWS S3, or Google Cloud Storage. Ensure that the data is organized and accessible for analysis.
+
+2. Data Ingestion: Use data ingestion tools like Azure Data Factory, AWS Glue, or Google Cloud Dataflow to load data into the data lake. These tools can handle batch and real-time data ingestion.
+
+3. Data Processing: Use a data processing framework like Apache Spark, Databricks, or Google BigQuery to process and transform the data. These frameworks can run on cloud resources and handle large-scale data processing.
+
+4. Data Access: Provide access to the data for the data scientist. This can be done through APIs, data access tools, or data visualization platforms like Power BI, Tableau, or Google Data Studio.
+
+5. Newriver Computing: Integrate with third-party GPU computing services like AWS SageMaker, Google Cloud AI Platform, or Azure Machine Learning. These platforms offer GPU instances for training machine learning models.
+
+6. Model Training: Use the third-party GPU computing service to train the model. Transfer the processed data from the data lake to the GPU instances and run the training process.
+
+7. Model Deployment: Once the model is trained, deploy it to a cloud environment for inference. This can be done using services like Azure Kubernetes Service, AWS Elastic Beanstalk, or Google Kubernetes Engine.(Newriver has a plan to build up a private cloud with similar services)
+
+8. Monitoring and Maintenance: Set up monitoring and maintenance processes to ensure the system is running smoothly. Use cloud monitoring tools like Azure Monitor, AWS CloudWatch, or Google Cloud Monitoring to track performance and detect issues.
